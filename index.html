@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>        
+    <meta charset="utf-8">  
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+    <title>HW20-js-fetch</title>
+  </head>
+<body>		
+<div>HW20-js-fetch</div>
+
+<div>
+1. Создайте на вашем github репозиторий с именем HW19-js-ajax. Все результаты нужно запушить в ваш репозиторий и прикрепить ссылку на hillel портале.<br>
+2. Создайте index.html в котором подключите js script.<br>
+3. Интерфейс разделен на две части. В левой части пользователь видит список альбомов. его берем из https://jsonplaceholder.typicode.com/albums<br>
+    Когда пользователь нажмет на какой-то альбом в правой части он увидит фотографии из этого альбома. Их берем из https://jsonplaceholder.typicode.com/photos?albumId=<сюда нужно подставить id альбома> где вместо ID подставляем ид нужного альбома.<br>
+    Сразу при загрузке приложения и получения списка альбомов, в правой части нужно показать фотографии из первого альбома в списке<br>
+</div>
+<div id="containerList">
+  <ul id="list"></ul>
+</div>
+<div id="containerImg">   
+  <div id="imgList"></div>
+</div> 
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
