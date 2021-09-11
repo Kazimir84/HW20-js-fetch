@@ -27,13 +27,17 @@ li:hover {
     color: red;
 }
 #imgList {
-    position: fixed;
-    top: 30%;
+    /* position: fixed; */
+    position: absolute;
+    top: 22%;
     width: 20%;
     height: 64%;
     left: 70%;
 }
 img {
-    position: fixed;
+    /* position: fixed; */
     width: 20%;
+}
+.logo {
+    list-style: none;
 }
