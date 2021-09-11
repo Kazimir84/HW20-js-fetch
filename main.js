@@ -14,16 +14,12 @@ getAlbumList();
 async function getLogo(id = 1) {
   let responseLogo = await fetch(`https://jsonplaceholder.typicode.com/photos?albumId=${id}`);
   let resaultLogos = await responseLogo.json();  
-  // imgList.innerHTML = resaultLogos.map((data) => {
-  //   let img = `<img src="${data.url}">`
-  //   return img;
-  // }).join('');  
-  let out = '<div>';
+  let output = '<div>';
   for( let i in resaultLogos ) {
-    out += `<li class="logo"><img src='${resaultLogos[i].url}'</li>`
+    output += `<li class="logo"><img src='${resaultLogos[i].url}'</li>`
   }
-  out += '</div>'
-  imgList.innerHTML = out;
+  output += '</div>'
+  imgList.innerHTML = output;
 };
 getLogo();
 
